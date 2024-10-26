@@ -12,3 +12,7 @@ Gorilla Mux - for HTTP request routing
 Google UUID - for generating unique IDs
 
 Install these dependencies using go mod tidy.
+
+How to run the app -
+
+go run main.go

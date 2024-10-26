@@ -81,7 +81,6 @@ func calculatePoints(receipt Receipt) int {
 
 	re := regexp.MustCompile(`[a-zA-Z0-9]`)
 	points += len(re.FindAllString(receipt.Retailer, -1))
-	// points += countAlphanumeric(receipt.Retailer)
 
 	total, _ := strconv.ParseFloat(receipt.Total, 64)
 	if total == math.Floor(total) {
